@@ -1,3 +1,4 @@
+
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
@@ -47,8 +48,6 @@
  '(package-selected-packages
    (quote
     (popup\.el auto-complete nord-theme which-key use-package haskell-mode))))
-  
-(tool-bar-mode -1)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -59,13 +58,12 @@
 (delete-selection-mode 1)
 (setq-default indent-tabs-mode nil)
 (setq-default cursor-type 'bar)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
-(when window-system (global-prettify-symbols-mode t)) 
- 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 200 :width normal :foundry "nil" :family "Menlo")))))
-
+'(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 300 :width normal :foundry "nil" :family "Menlo")))))
