@@ -6,6 +6,10 @@
    '(haskell-mode-hook
      '(turn-on-haskell-indentation
        turn-on-haskell-doc)))
+
+  ;; Setup GHCI process type
+  (custom-set-variables
+  '(haskell-process-type 'stack-ghci))
   ;; Setup haskell-interactive-mode keybindings. Get started by using C-c C-z from
   ;; a buffer visiting a file in your Haskell project.
   ;; Switch to the current REPL buffer, starting a session if needed.
@@ -29,20 +33,5 @@
   ;; Run `cabal test' in a compile buffer.
   (bind-keys :map haskell-mode-map
              ("C-c C-," . j-haskell/run-test-suite)))
-
-
-;; A function for launching a compile buffer with `cabal test'.
-(defun j-haskell/run-test-suite ()
-  (interactive)
-  (require 'compile)
-  (projectile-with-default-dir (projectile-project-root)
-    (compile "cabal test")))
-
-;; Flycheck addons
-(use-package flycheck-haskell
-  :config
-  (with-eval-after-load "flycheck"
-    (with-eval-after-load "haskell"
-      (add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))))
 
 (provide 'j-haskell)
