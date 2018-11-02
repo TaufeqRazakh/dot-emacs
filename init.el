@@ -35,10 +35,10 @@
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-; (load-theme 'material t)
+; ; (load-theme 'material t)
 (add-to-list 'default-frame-alist '(height . 50))
-(add-to-list 'default-frame-alist '(width . 160))
-(setq initial-frame-alist '((left . 100) (top . 80)))
+(add-to-list 'default-frame-alist '(width . 60))
+; (setq initial-frame-alist '((left . 100) (top . 80)))
 
 
 (require 'j-package)
@@ -53,6 +53,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(cursor-type (quote bar))
+ '(custom-enabled-themes (quote (leuven)))
  '(delete-selection-mode t)
  '(display-line-numbers-grow-only nil)
  '(global-display-line-numbers-mode t)
