@@ -56,8 +56,10 @@
  '(custom-enabled-themes (quote (leuven)))
  '(delete-selection-mode t)
  '(display-line-numbers-grow-only nil)
+ '(electric-pair-mode t)
  '(global-display-line-numbers-mode t)
  '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
+ '(haskell-process-type (quote stack-ghci))
  '(package-selected-packages
    (quote
     (ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
