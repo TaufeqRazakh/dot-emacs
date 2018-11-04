@@ -53,11 +53,8 @@
  '(cursor-type (quote bar))
  '(custom-enabled-themes (quote (leuven)))
  '(delete-selection-mode t)
-<<<<<<< HEAD
  '(display-line-numbers-grow-only nil)
  '(electric-pair-mode t)
-=======
->>>>>>> refs/remotes/origin/master
  '(global-display-line-numbers-mode t)
  '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
  '(haskell-process-type (quote stack-ghci))

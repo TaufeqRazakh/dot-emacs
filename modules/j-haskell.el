@@ -35,8 +35,5 @@
   (bind-keys :map haskell-mode-map
              ("C-c C-," . j-haskell/run-test-suite)))
 
-<<<<<<< HEAD
 (provide 'j-haskell)
-=======
-(provide 'j-haskell)
->>>>>>> refs/remotes/origin/master
+
