@@ -1,23 +1,44 @@
-<<<<<<< HEAD
-((("greet" .
-   [0 0 0 0 1])
-  ("withTty" .
+((("move-beginning-of-line" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("noDuplicates" .
+   [1 0 0 0 0 2 1 0 0 1 0 0])
+  ("takeTimes" .
+   [1 0 0 0 0 0 0 1 0])
+  ("Monad" .
+   [0 0 0 1 0])
+  ("Control" .
+   [1 0 0 0 0 0 0])
+  ("inpuSetCount" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("forM" .
+   [0 0 0 2])
+  ("getLine" .
+   [0 0 0 1 1 0 0])
+  ("main" .
+   [1 0 0 0])
+  ("putStr" .
+   [0 0 1 1 0 1])
+  ("TimeSeriesResponse" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fullSet" .
    [0 0 0 0 1 0 0])
-  ("hputStrLn" .
-   [0 0 0 0 1 0 0 0 0])
-  ("name" .
-   [2 0 0 0])
-  ("System.IO" .
-   [0 0 0 0 0 0 1 0 0])
-  ("branchSumPow" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("target" .
-   [1 0 0 0 0 0])
-  ("pow" .
+  ("Map" .
+   [5 0 0])
+  ("toMap" .
+   [1 0 0 0 0])
+  ("inMap" .
+   [3 0 0 0 0])
+  ("True" .
+   [0 0 0 1])
+  ("lookup" .
+   [0 0 0 0 1 0])
+  ("val" .
    [1 0 0])
-  ("otherwise" .
-   [0 0 0 0 0 1 0 0 0])))
-=======
-((("putStr" .
-   [0 0 0 1 1 0])))
->>>>>>> refs/remotes/origin/master
+  ("false" .
+   [1 0 0 0 0])
+  ("putStrLn" .
+   [0 0 0 1 0 0 0 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("j-preferences" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])))
