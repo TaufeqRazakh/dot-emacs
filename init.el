@@ -43,7 +43,6 @@
 (require 'j-preferences)
 (require 'j-package)
 (require 'j-haskell)
-(require 'j-purescript)
 (require 'j-scala)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -60,7 +59,7 @@
  '(haskell-process-type (quote stack-ghci))
  '(package-selected-packages
    (quote
-    (ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
+    (counsel swiper ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
