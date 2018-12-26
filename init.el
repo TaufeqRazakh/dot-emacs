@@ -59,7 +59,7 @@
  '(haskell-process-type (quote stack-ghci))
  '(package-selected-packages
    (quote
-    (counsel swiper ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
+    (phi-search multiple-cursors counsel swiper ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
