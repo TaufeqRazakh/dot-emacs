@@ -40,10 +40,12 @@
 (add-to-list 'default-frame-alist '(width . 60))
 ; (setq initial-frame-alist '((left . 100) (top . 80)))
 
-(require 'j-preferences)
+
 (require 'j-package)
 (require 'j-haskell)
 (require 'j-scala)
+(require 'j-preferences)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
