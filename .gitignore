@@ -1,4 +1,2 @@
-/elpa
-.dat
-elpa/
-.elpa/
+elpa/*
+auto-save-list/*
