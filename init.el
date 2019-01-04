@@ -51,8 +51,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
  '(cursor-type (quote bar))
- '(custom-enabled-themes (quote (leuven)))
+ '(custom-enabled-themes (quote (dracula)))
+ '(custom-safe-themes
+   (quote
+    ("617341f1be9e584692e4f01821716a0b6326baaec1749e15d88f6cc11c288ec6" default)))
  '(delete-selection-mode t)
  '(display-line-numbers-grow-only nil)
  '(electric-pair-mode t)
@@ -61,7 +68,7 @@
  '(haskell-process-type (quote stack-ghci))
  '(package-selected-packages
    (quote
-    (phi-search multiple-cursors counsel swiper ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
+    (dracula-theme phi-search multiple-cursors counsel swiper ensime purescript-mode flycheck-haskell haskell-mode use-package paradox))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
