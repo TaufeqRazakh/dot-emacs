@@ -33,4 +33,6 @@
 
 ;; Themes to try
 (use-package dracula-theme)
+(use-package solarized-theme)
+
 (provide 'j-preferences)
