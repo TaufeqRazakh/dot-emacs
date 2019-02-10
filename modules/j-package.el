@@ -39,21 +39,6 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; Get recommendations when using C-  
-(use-package which-key
-  :ensure t
-  :init
-(which-key-mode))
-
-;; Use auto-complete 
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)
-))
-
 ;; We're going to try to declare the packages each feature needs as we
 ;; define it. To do this, we define a function `(package-require)`
 ;; which will fetch and install a package from the repositories if it

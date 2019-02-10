@@ -1,4 +1,28 @@
-((("otherwise" .
+((("new" .
+   [1 0 0])
+  ("old" .
+   [1 0 0])
+  ("renameDirectory" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("renameFile" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("rename" .
+   [3 0 0 0 0 0])
+  ("path'" .
+   [2 0 0 0 0])
+  ("path" .
+   [4 0 0 0])
+  ("renameWith" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("namesMatching" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Glob" .
+   [1 0 0 0])
+  ("doesFileExist" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("System" .
+   [2 0 0 0 0 0])
+  ("otherwise" .
    [0 0 0 0 0 1 0 0 0])
   ("String" .
    [0 0 0 1 0 0])

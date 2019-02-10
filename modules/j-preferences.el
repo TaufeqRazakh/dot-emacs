@@ -31,8 +31,24 @@
 (global-set-key (kbd "C-Z") 'redo)
 (global-set-key (kbd "C-z") 'undo)
 
+;; Get recommendations when using C-  
+(use-package which-key
+  :ensure t
+  :init
+(which-key-mode))
+
+;; Use auto-complete 
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
+
 ;; Themes to try
 (use-package dracula-theme)
 (use-package solarized-theme)
+(use-package color-theme-sanityinc-tomorrow)
 
 (provide 'j-preferences)
