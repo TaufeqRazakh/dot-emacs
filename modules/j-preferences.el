@@ -46,9 +46,4 @@
     (global-auto-complete-mode t)
     ))
 
-;; Themes to try
-(use-package dracula-theme)
-(use-package solarized-theme)
-(use-package color-theme-sanityinc-tomorrow)
-
 (provide 'j-preferences)
