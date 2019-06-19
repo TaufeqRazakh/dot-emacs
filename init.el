@@ -13,10 +13,6 @@
 ;; Figure out the current hostname.
 (setq hostname (replace-regexp-in-string "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" (with-output-to-string (call-process "hostname" nil standard-output))))
 
-;; Prevent tool bar and scross from appearing
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
 ;;accept y/n in place of explicit yes and no
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -28,37 +24,52 @@
 ;; load all .el files from modules dir
 (add-to-list 'load-path (concat dotfiles-dir "modules"))
 
-
-
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-(add-to-list 'default-frame-alist '(height . 50))
-(add-to-list 'default-frame-alist '(width . 60))
-; (setq initial-frame-alist '((left . 100) (top . 80)))
-
-
 (require 'j-package)
 (require 'j-haskell)
 (require 'j-preferences)
 (require 'j-clojure)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(cua-mode t nil (cua-base))
- '(cursor-type (quote bar))
- '(custom-enabled-themes (quote (dichromacy)))
- '(delete-active-region t)
- '(delete-selection-mode t)
- '(electric-pair-mode t)
- '(global-linum-mode t))
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
+ '(haskell-process-type (quote stack-ghci))
+ '(package-selected-packages
+   (quote
+    (beacon cider auto-complete which-key haskell-mode use-package paradox))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 220 :width normal :foundry "nil" :family "Monaco")))))
+ )
