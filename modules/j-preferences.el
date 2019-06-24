@@ -1,6 +1,6 @@
 ;; Making search easier with up and down keys
- (define-key isearch-mode-map [down]
-   'isearch-repeat-forward)
+(define-key isearch-mode-map [down]
+  'isearch-repeat-forward)
 (define-key isearch-mode-map [up]
   'isearch-repeat-backward)
 
@@ -24,10 +24,5 @@
     (ac-config-default)
     (global-auto-complete-mode t)
     ))
-
-(use-package beacon
-  :ensure t
-  :init
-  (beacon-mode 1))
 
 (provide 'j-preferences)
