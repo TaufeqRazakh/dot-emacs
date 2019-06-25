@@ -1,26 +1,26 @@
-((("frame-background-mode" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("solarized" .
-   [0 0 0 0 1 0 0 0 0])
-  ("quote" .
-   [1 0 0 0 1])
-  ("custom-enabled-themes" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("customize-themes" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("custom-theme-load-path" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("var" .
-   [3 0 0])
-  ("kt_state" .
-   [0 0 0 0 0 0 1 0])
-  ("p_pid" .
-   [0 0 0 0 2])
-  ("PID_IDLE" .
-   [1 0 0 0 1 0 1 0])
+((("dark" .
+   [1 0 0 0])
   ("p_pproc" .
    [0 0 0 0 0 1 0])
-  ("dark" .
-   [1 0 0 0])))
+  ("PID_IDLE" .
+   [1 0 0 0 1 0 1 0])
+  ("p_pid" .
+   [0 0 0 0 2])
+  ("kt_state" .
+   [0 0 0 0 0 0 1 0])
+  ("var" .
+   [3 0 0])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("custom-theme-load-path" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("customize-themes" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("custom-enabled-themes" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("quote" .
+   [1 0 0 0 1])
+  ("solarized" .
+   [0 0 0 0 1 0 0 0 0])
+  ("frame-background-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])))

@@ -27,9 +27,6 @@
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
-;; Paths to add for custom themes and color schemes
-(add-to-list 'custom-theme-load-path "/Users/taufeqrazakh/.emacs.d/emacs-color-theme-solarized")
-
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 (require 'j-package)
