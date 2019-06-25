@@ -36,45 +36,19 @@
 (require 'j-haskell)
 (require 'j-preferences)
 (require 'j-clojure)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (wombat)))
+ '(custom-enabled-themes (quote (solarized)))
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(delete-selection-mode t)
  '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
  '(haskell-process-type (quote stack-ghci))
- '(package-selected-packages
-   (quote
-    (beacon cider auto-complete which-key haskell-mode use-package paradox)))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 100)
  '(tool-bar-mode nil))
@@ -83,4 +57,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 180 :width normal :foundry "nil" :family "Menlo")))))
+ '(default ((t (:height 180 :family "Monaco")))))
