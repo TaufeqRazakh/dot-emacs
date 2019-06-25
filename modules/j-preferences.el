@@ -24,8 +24,4 @@
     (ac-config-default)
     (global-auto-complete-mode t)))
 
-;;set solarized theme parameters for terminal
-(setq solarized-termcolors 256)
-
-
 (provide 'j-preferences)
