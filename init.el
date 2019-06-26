@@ -1,21 +1,6 @@
 ;; Initialise the package system first of all.
 (package-initialize)
 
-;; Skip the default splash screen.
-(setq inhibit-startup-message t)
-
-;; Skip the default end of buffer ring.
-(setq ring-bell-function 'ignore)
-
-;; Ensure uniform scrolling in open files.
-(setq scroll-conservatively 100)
-
-;; Figure out the current hostname.
-(setq hostname (replace-regexp-in-string "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" (with-output-to-string (call-process "hostname" nil standard-output))))
-
-;;accept y/n in place of explicit yes and no
-(defalias 'yes-or-no-p 'y-or-n-p)
-
 ;; Figure out the path to our .emacs.d by getting the path part of the
 ;; current file (`init.el`).
 (setq dotfiles-dir (file-name-directory
@@ -33,25 +18,3 @@
 (require 'j-haskell)
 (require 'j-preferences)
 (require 'j-clojure)
- 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(delete-selection-mode t)
- '(electric-pair-mode t)
- '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
- '(haskell-process-type (quote stack-ghci))
- '(package-selected-packages
-   (quote
-    (company cider auto-complete which-key haskell-mode use-package paradox)))
- '(scroll-bar-mode nil)
- '(scroll-conservatively 100)
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:height 180 :family "Monaco")))))
