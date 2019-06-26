@@ -16,12 +16,10 @@
   :init
 (which-key-mode))
 
-;; Use auto-complete 
-(use-package auto-complete
+;; Use company for completion
+(use-package company
   :ensure t
   :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)))
+  (add-hook 'after-init-hook 'global-company-mode))
 
 (provide 'j-preferences)

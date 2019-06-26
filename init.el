@@ -43,6 +43,9 @@
  '(electric-pair-mode t)
  '(haskell-mode-hook (quote (turn-on-haskell-indentation turn-on-haskell-doc)))
  '(haskell-process-type (quote stack-ghci))
+ '(package-selected-packages
+   (quote
+    (company cider auto-complete which-key haskell-mode use-package paradox)))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 100)
  '(tool-bar-mode nil))
